@@ -1,0 +1,39 @@
+@import 'header';
+@import 'footer';
+@import 'navbar';
+@import url('https://fonts.googleapis.com/css?family=Bitter');
+
+body{
+  background-color: lightgrey;
+  background-image: url("../Images/shopView2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  //margin:10px;
+  //padding: 10px;
+}
+h4{
+  padding: 10px;
+  margin:10px;
+  font-family: 'Bitter', serif;
+  font-weight: bold;
+}
+div p{
+  padding: 10px;
+  margin:10px;
+}
+
+#transition{
+  margin:10px;
+  padding: 10px;
+}
+
+#transition:hover{
+  -ms-transform: scale(1.15, 1.15);
+    -webkit-transform: scale(1.15, 1.15);
+    transform: scale(1.15, 1.15);
+    @include verticalGradient(to right, white, #717D7E);
+    border: 1px solid black;
+    border-radius: 10px;
+}

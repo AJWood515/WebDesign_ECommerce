@@ -1,0 +1,23 @@
+@import 'header';
+@import 'footer';
+@import 'navbar';
+
+@import 'gradientMixin';
+
+body{
+  background-color: lightgrey;
+  background-image: url("../Images/shopView2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+form{
+  @include verticalGradient(to right, white, #717D7E);
+  padding:15px;
+  margin:10px;
+  border-radius: 25px;
+}
+.form-control{
+  border: 1px solid black;
+}

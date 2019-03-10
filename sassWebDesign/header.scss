@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css?family=Gentium+Basic');
+
+@import 'gradientMixin';
+
+.jumbotron {
+  @include verticalGradient(to bottom, white, #717D7E);
+  border: 2px solid black;
+
+}
+[class|=lg-col-6]{
+//  background-color: white;
+  margin:auto;
+  margin-top: -10px;
+  font-family: 'Gentium Basic', serif;
+}
+h1{
+  font-size: 55px;
+}
+h5{
+  font-size: 35px;
+  margin-top: -20px;
+}
+header img{
+  height:230px;
+  width:250px;
+  margin-top: -55px;
+  margin-left: -20px;
+}
+header .media div:nth-of-type(2){
+//  background-color: red;
+  margin:auto;
+  margin-top: -5px;
+}
+@media screen and (max-width: 630px) {
+    #hide{
+      display: none;
+    }
+
+}
+@media screen and (max-width: 575px) {
+    header img {
+      height:230px;
+      width:250px;
+      margin-top: 0px;
+      margin-left: 0px;
+    }
+  }
+    @media screen and (max-width: 575px) {
+        header img {
+          display: none;
+        }
+
+}

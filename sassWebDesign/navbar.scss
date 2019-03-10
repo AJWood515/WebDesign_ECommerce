@@ -1,0 +1,13 @@
+ nav{
+   background-color: #1A5276;
+
+ }
+.navbar-light .navbar-nav .nav-link{
+   color: white;
+ }
+.navbar-light .navbar-nav .nav-link.disabled{
+  color:#ffc024
+}
+a:not([href]):not([tabindex]) {
+  color:white;
+}

@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css?family=Gentium+Basic');
+
+@import 'gradientMixin';
+
+footer{
+  @include verticalGradient(to left, white, #717D7E);
+  border: 1px solid black;
+  height:100px;
+  margin: 10px;
+  padding: 5px;
+  font-family: 'Gentium Basic', serif;
+}
+footer p{
+  font-size: 30px;
+}
+address{
+  font-size: 20px;
+  margin-top: -25px;
+}
+footer section{
+  float:right;
+  margin-top: -100px;
+}
+@media screen and (max-width: 500px) {
+    footer section{
+      display:none;
+    }
+  }
