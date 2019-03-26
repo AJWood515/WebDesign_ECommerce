@@ -13,7 +13,10 @@
   /* For Firefox 3.6 to 15 */
   background: linear-gradient(to bottom, white, #717D7E);
   /* Standard syntax (must be last) */
-  border: 2px solid black; }
+  border: 2px solid black;
+  background-image: url("../Images/appleHeader.jpg");
+  background-size: cover;
+  background-repeat: no-repeat; }
 
 [class|=lg-col-6] {
   margin: auto;
@@ -21,11 +24,15 @@
   font-family: 'Gentium Basic', serif; }
 
 h1 {
-  font-size: 55px; }
+  font-size: 55px;
+  color: white;
+  text-shadow: 2px 2px 4px #000000; }
 
 h5 {
   font-size: 35px;
-  margin-top: -20px; }
+  margin-top: -20px;
+  color: white;
+  text-shadow: 2px 2px 4px #000000; }
 
 header img {
   height: 230px;
@@ -35,7 +42,9 @@ header img {
 
 header .media div:nth-of-type(2) {
   margin: auto;
-  margin-top: -5px; }
+  margin-top: -5px;
+  color: white;
+  text-shadow: 2px 2px 4px #000000; }
 
 @media screen and (max-width: 630px) {
   #hide {
@@ -95,7 +104,7 @@ a:not([href]):not([tabindex]) {
 
 body {
   background-color: lightgrey;
-  background-image: url("../Images/shopView2.jpg");
+  background-image: url("../Images/appleBackground.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -131,5 +140,9 @@ div p {
   /* Standard syntax (must be last) */
   border: 1px solid black;
   border-radius: 10px; }
+
+.carousel-item {
+  width: 550px;
+  height: 550px; }
 
 /*# sourceMappingURL=index.css.map */

@@ -1,0 +1,151 @@
+<!Doctype html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Latest compiled and minified CSS -->
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="sassWebDesign/index.css">
+  <title>Contact Me</title>
+</head>
+
+<body>
+  <header id="header" class="jumbotron lg-col-12">
+    <div class="media">
+    <!--  <img src="Images/appleHeader.jpg" class="align-self-center mr-3 lg-col-3">-->
+      <div class = "lg-col-6">
+        <h1>Apple Online Store</h1><br/>
+        <h5>Apple <br/>computers and accessories</h5>
+      </div>
+      <div class = "lg-col-3">
+        <p id = "hide">
+          Apple Online Store<br/>
+          1 Apple Park Way <br/> 	Cupertino, California 95014<br/>
+          (408) 961-1560
+        </p>
+      </div>
+    </div>
+  </header>
+  <nav class="navbar navbar-expand-lg navbar-light ">
+    <a class="navbar-brand">Menu</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="About.html">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled">Contact Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="Location.html">Location & Hours</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <main>
+    <div class="container">
+      <form>
+        <h3>
+        Contact Us
+        </h3>
+        <div class="form-group">
+          <label>First Name</label>
+          <input type="text" class="form-control">
+          <label>Last Name</label>
+          <input type="text" class="form-control">
+          <label for="exampleFormControlInput1">Email Address</label>
+          <input type="email" class="form-control" placeholder="name@example.com">
+          <label>Subject</label>
+          <input type="text" class="form-control">
+          <label> Your Message</label>
+          <textarea type="text" class="form-control"></textarea>
+          <br/>
+          <button type="submit" class="btn btn-success">Send</button>
+          <button type="reset" class="btn btn-danger">Reset</button>
+        </div>
+
+      </form>
+    </div>
+  </main>
+  <footer>
+    <p>Apple Online Store</p>
+    <address>
+    1 Apple Park Way <br/> 	Cupertino, California 95014<br/></address>
+    <section>
+      Telephone: (408) 961-1560
+    </section>
+  </footer>
+</body>
+<script>
+  $('.button').click(function() {
+    var $btn = $(this),
+      $step = $btn.parents('.modal-body'),
+      stepIndex = $step.index(),
+      $pag = $('.modal-header span').eq(stepIndex);
+
+    if (stepIndex === 0 || stepIndex === 1) {
+      step1($step, $pag);
+    } else {
+      step3($step, $pag);
+    }
+
+  });
+
+
+  function step1($step, $pag) {
+    console.log('step1');
+    // animate the step out
+    $step.addClass('animate-out');
+
+    // animate the step in
+    setTimeout(function() {
+      $step.removeClass('animate-out is-showing')
+        .next().addClass('animate-in');
+      $pag.removeClass('is-active')
+        .next().addClass('is-active');
+    }, 600);
+
+    // after the animation, adjust the classes
+    setTimeout(function() {
+      $step.next().removeClass('animate-in')
+        .addClass('is-showing');
+
+    }, 1200);
+  }
+
+
+  function step3($step, $pag) {
+    console.log('3');
+
+    // animate the step out
+    $step.parents('.modal-wrap').addClass('animate-up');
+
+    setTimeout(function() {
+      $('.rerun-button').css('display', 'inline-block');
+    }, 300);
+  }
+
+  $('.rerun-button').click(function() {
+    $('.modal-wrap').removeClass('animate-up')
+      .find('.modal-body')
+      .first().addClass('is-showing')
+      .siblings().removeClass('is-showing');
+
+    $('.modal-header span').first().addClass('is-active')
+      .siblings().removeClass('is-active');
+    $(this).hide();
+  });
+</script>
+
+</html>
