@@ -1,0 +1,80 @@
+@import 'header';
+@import 'footer';
+@import 'navbar';
+
+body{
+  background-color: lightgrey;
+  background-image: url("../Images/shopView2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+main .media{
+  @include verticalGradient(to right, white, #717D7E);
+  border: 1px solid black;
+  margin: 16px;
+}
+body img{
+  height:15em;
+  width:15em;
+}
+.right{
+  display:block;
+  width: 5em;
+  height: 5em;
+}
+
+#slide{
+  opacity: 0;
+  -webkit-animation: slide 10s forwards;
+  -webkit-animation-delay:1s;
+  animation: slide 10s forwards;
+  animation-delay: 1s;
+}
+#slide2{
+  opacity: 0;
+  -webkit-animation: slide 10s forwards;
+  -webkit-animation-delay:2s;
+  animation: slide 10s forwards;
+  animation-delay: 2s;
+}
+#slide3{
+  opacity: 0;
+  -webkit-animation: slide 10s forwards;
+  -webkit-animation-delay:3s;
+  animation: slide 10s forwards;
+  animation-delay: 3s;
+}
+
+@-webkit-keyframes slide {
+  10%{opacity: 10;}
+  20%{opacity: 20;}
+  30%{opacity:30;}
+  40%{opacity:40;}
+  50%{opacity: 50;}
+  60%{opacity:60;}
+  70%{opacity: 70;}
+  80%{opacity: 80;}
+  90%{opacity: 90;}
+  100% {opacity: 100;}
+}
+
+@keyframes slide {
+  10%{opacity: 10;}
+  20%{opacity: 20;}
+  30%{opacity:30;}
+  40%{opacity:40;}
+  50%{opacity: 50;}
+  60%{opacity:60;}
+  70%{opacity: 70;}
+  80%{opacity: 80;}
+  90%{opacity: 90;}
+  100% {opacity: 100;}
+}
+
+@media screen and (max-width: 630px) {
+    body img{
+      display:none;
+    }
+}
