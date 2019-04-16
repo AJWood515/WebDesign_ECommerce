@@ -17,6 +17,10 @@
   background-size: cover;
   background-repeat: no-repeat; }
 
+.jumbotron img {
+  border-radius: 100%;
+  background-color: white; }
+
 [class|=lg-col-6] {
   margin: auto;
   margin-top: -10px;

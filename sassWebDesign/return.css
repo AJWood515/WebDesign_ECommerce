@@ -105,6 +105,7 @@ nav {
 a:not([href]):not([tabindex]) {
   color: white; }
 
+/* CSS Document */
 body {
   background-color: lightgrey;
   background-image: url("../Images/appleBackground.jpg");
@@ -113,94 +114,22 @@ body {
   background-position: center;
   background-attachment: fixed; }
 
-main .media {
+form {
   background: white;
   /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(to right, white, #717D7E);
+  background: -webkit-linear-gradient(to top, white, #717D7E);
   /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(to right, white, #717D7E);
+  background: -o-linear-gradient(to top, white, #717D7E);
   /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(to right, white, #717D7E);
+  background: -moz-linear-gradient(to top, white, #717D7E);
   /* For Firefox 3.6 to 15 */
-  background: linear-gradient(to right, white, #717D7E);
+  background: linear-gradient(to top, white, #717D7E);
   /* Standard syntax (must be last) */
-  border: 1px solid black;
-  margin: 16px; }
+  padding: 15px;
+  margin: 10px;
+  border-radius: 25px; }
 
-body img {
-  height: 15em;
-  width: 15em; }
+.form-control {
+  border: 1px solid black; }
 
-.right {
-  display: block;
-  width: 5em;
-  height: 5em; }
-
-#slide {
-  opacity: 0;
-  -webkit-animation: slide 10s forwards;
-  -webkit-animation-delay: 1s;
-  animation: slide 10s forwards;
-  animation-delay: 1s; }
-
-#slide2 {
-  opacity: 0;
-  -webkit-animation: slide 10s forwards;
-  -webkit-animation-delay: 2s;
-  animation: slide 10s forwards;
-  animation-delay: 2s; }
-
-#slide3 {
-  opacity: 0;
-  -webkit-animation: slide 10s forwards;
-  -webkit-animation-delay: 3s;
-  animation: slide 10s forwards;
-  animation-delay: 3s; }
-
-@-webkit-keyframes slide {
-  10% {
-    opacity: 10; }
-  20% {
-    opacity: 20; }
-  30% {
-    opacity: 30; }
-  40% {
-    opacity: 40; }
-  50% {
-    opacity: 50; }
-  60% {
-    opacity: 60; }
-  70% {
-    opacity: 70; }
-  80% {
-    opacity: 80; }
-  90% {
-    opacity: 90; }
-  100% {
-    opacity: 100; } }
-@keyframes slide {
-  10% {
-    opacity: 10; }
-  20% {
-    opacity: 20; }
-  30% {
-    opacity: 30; }
-  40% {
-    opacity: 40; }
-  50% {
-    opacity: 50; }
-  60% {
-    opacity: 60; }
-  70% {
-    opacity: 70; }
-  80% {
-    opacity: 80; }
-  90% {
-    opacity: 90; }
-  100% {
-    opacity: 100; } }
-@media screen and (max-width: 630px) {
-  body img {
-    display: none; } }
-
-/*# sourceMappingURL=products.css.map */
+/*# sourceMappingURL=return.css.map */
