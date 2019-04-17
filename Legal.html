@@ -8,16 +8,32 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
-  <link rel="stylesheet" type="text/css" href="sass/css/projects.css">
+  <link rel="stylesheet" type="text/css" href="sassWebDesign/Legal.css">
   <script>
     $(document).ready(function() {
       location.hash && $(location.hash + '.collapse').collapse('show');
     });
   </script>
-  <title>Legal></title>
+  <title>Legal</title>
 </head>
 
 <body>
+  <header id="header" class="jumbotron lg-col-12">
+    <div class="media">
+  <img src="Images/apple_logo.png" class="align-self-center mr-3 lg-col-3">
+      <div class = "lg-col-6">
+        <h1>Apple Online Store</h1><br/>
+        <h5>Apple <br/>computers and accessories</h5>
+      </div>
+      <div class = "lg-col-3">
+        <p id = "hide">
+          Apple Online Store<br/>
+          1 Apple Park Way <br/> 	Cupertino, California 95014<br/>
+          (408) 961-1560
+        </p>
+      </div>
+    </div>
+  </header>
   <nav class="navbar navbar-expand-lg navbar-light ">
     <a class="navbar-brand">Menu</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -42,106 +58,53 @@
           <a class="nav-link " href="Location.html">Location & Hours</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="Return.html">Return</a>
+          <a class="nav-link" href="Returns.html">Return</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link disabled">Legal<span class="sr-only">(current)</span></a>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="Legal.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Extras
+        </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="Legal.html">Extras</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#WarrantyHeading" id="openWarranty">Warranty</a>
+            <a class="dropdown-item" href="#CustomerServiceHeading" id="openCustomerService">Customer Service</a>
+            <a class="dropdown-item" href="#TermServiceHeading" id="openTermService">Terms & Service</a>
+            <a class="dropdown-item" href="Legal.html#Return">Return Information</a>
+            <a class="dropdown-item" href="Legal.html#FAQ">FAQ</a>
+          </div>
         </li>
       </ul>
     </div>
   </nav>
-  <header class="jumbotron col-lg-12">
-    <div class="row">
-      <div class="col-lg-9  justify-content-center">
-        <h1>Alex Wood</h1>
-        <h3>Web Developer</h3>
-      </div>
-
-      <div class="col-lg-3 justify-text-center">
-        <p id="hide">
-          Custom Web Development<br/> Pleasant Hill, Ia<br/>
-          <a href="mailto:A.J.Wood515@gmail.com">A.J.Wood515@gmail.com</a>
-        </p>
-      </div>
-    </div>
-  </header>
   <main>
 
     <div class="row">
       <div class="sidenav col-lg-1">
-        <a href="#PHPHeading" id="openPHP">PHP</a>
-        <a href="#JavaHeading" id="openJava">Java</a>
-        <a href="#AdvCssHeading" id="openAdvCss">Advanced CSS</a>
-        <a href="#UIUXHeading" id="openUIUX">UI UX Design</a>
-        <a href="#OtherHeading" id="openOther">Other Projects</a>
+        <a href="#WarrantyHeading" id="openWarranty">Warranty</a>
+        <a href="#CustomerServiceHeading" id="openCustomerService">Customer Service</a>
+        <a href="#TermServiceHeading" id="openTermService">Terms & Service</a>
+        <a href="#ReturnHeading" id="openReturn">Return Information</a>
+        <a href="#FAQHeading" id="openFAQ">FAQ</a>
       </div>
 
 
       <div class="accordion col-lg-11 float-right" id="accordionProjects">
         <div class="card">
-          <div class="card-header" id="PHPHeading">
+          <div class="card-header" id="WarrantyHeading">
             <h5 class="mb-0">
-              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#PHP" aria-expanded="true" aria-controls="PHP">
-                PHP
-              </button>
-            </h5>
-          </div>
-
-          <div id="PHP" class="collapse show" aria-labelledby="PHPHeading" data-parent="#accordionProjects">
-            <div class="card-body">
-              <div class="media">
-                <a href="http://homealexwoodwork.us/CIS175/PantryFinal/home.html" target="_blank"><img class="mr-3" src="Images/PHPSite.png" href = "Images/PHPSite.png" alt="Generic placeholder image"></a>
-                <div class="media-body">
-                  <h5 class="mt-0">PHP Group Project</h5>
-                  <p>This was a class project I did in PHP. I created most of the website or had a helping hand in the website besides the contact page and the calorie page. The site gives you a list of ingredients from your pantry to see if you can make
-                    recipies. It then takes the used items and deletes them from the pantry. It has an admin page that lets you enter more ingredients into the database. It also lets you update or delete the current ingredients from the pantry. The database
-                    a used is from the relational databases from <b>Amazon Web Services</b>. I used <b>MySQL Workbench</b> to create some of the tables and enter in ingredients, user names, and passwords. The login, insert, update pages have server side
-                    validation used to check the fields. I have disabled new user sign ins so if you wish to see the admin page please contact me with a request and I will give you access.</p>
-                  <p>For the GitHub link to this project click
-                    <a href="https://github.com/AJWood515/Food-Inventory" target="_blank">here</a></p>
-                  <p>
-                    <a href="http://homealexwoodwork.us/CIS175/PantryFinal/home.html" target="_blank"><b>Link to website</b></a>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-header" id="JavaHeading">
-            <h5 class="mb-0">
-              <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#Java" aria-expanded="false" aria-controls="Java">
-                Java
-              </button>
-            </h5>
-          </div>
-          <div id="Java" class="collapse" aria-labelledby="JavaHeading" data-parent="#accordionProjects">
-            <div class="card-body">
-              <p>
-                <h5>Data Structures Course</h5> My Data structures course final is a student schedule that you can add new students and add new courses. You can add courses to students and then display a course list for each student. The courses are sorted alphabetically automatically
-                when added to the students using a linked list. You can then take the students and sort them by their last name in an Insertion Sort. You can check out what I had to do make this at my GitHub
-                <a href="https://github.com/AJWood515/Food-Inventory" target="_blank">here</a>
-              </p>
-              <p>
-                <h5>There is other Java projects in my GitHub from when I started school.</h5>
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-header" id="AdvCssHeading">
-            <h5 class="mb-0">
-        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#AdvCss" aria-expanded="false" aria-controls="AdvCss">
-          Advanced CSS
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#Warranty" aria-expanded="false" aria-controls="Warranty">
+          Warranty
         </button>
       </h5>
           </div>
-          <div id="AdvCss" class="collapse" aria-labelledby="AdvCssHeading" data-parent="#accordionProjects">
+          <div id="Warranty" class="collapse show" aria-labelledby="WarrantyHeading" data-parent="#accordionProjects">
             <div class="card-body">
               <div class="card-body">
                 <div class="media">
-                  <a href="http://homealexwoodwork.us/WDV205AdvCSS/FinalProject/index.html" target="_blank"><img class="mr-3" src="Images/McConnell.png" href = "Images/McConnell.png" alt="Generic placeholder image"></a>
+                  <img class="mr-3" src="Images/Warranty.jpg" href = "Images/Warranty.jpg" alt="Warranty"></a>
                   <div class="media-body">
-                    <h5 class="mt-0"><p><h5>Advanced CSS Project</h5> This was a class project I did in my advanced CSS. It is a four page website that uses a mixture of CSS Animations, Sass, and Sass mixins. It also uses BootStrap v4.1 and custom media queries to give it a responsive design.</p>
+                    <h5 class="mt-0"><p><h5>Warranty</h5> This was a class project I did in my advanced CSS. It is a four page website that uses a mixture of CSS Animations, Sass, and Sass mixins. It also uses BootStrap v4.1 and custom media queries to give it a responsive design.</p>
                     <p>For the GitHub link to this project click
                       <a href="https://github.com/AJWood515/AdvCSS/tree/master/FinalProject" target="_blank">here</a></p>
                     <p>
@@ -154,30 +117,86 @@
           </div>
         </div>
         <div class="card">
-          <div class="card-header" id="UIUXHeading">
+          <div class="card-header" id="CustomerServiceHeading">
             <h5 class="mb-0">
-              <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#UIUX" aria-expanded="false" aria-controls="UIUX">
-                UI UX Design
+              <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#CustomerService" aria-expanded="false" aria-controls="CustomerService">
+                Customer Service
               </button>
             </h5>
           </div>
-          <div id="UIUX" class="collapse" aria-labelledby="UIUXHeading" data-parent="#accordionProjects">
+          <div id="CustomerService" class="collapse" aria-labelledby="CustomerServiceHeading" data-parent="#accordionProjects">
             <div class="card-body">
-              I am currently taking a course through Udemy to learn about UI/UX design and how to implement it into my sites. There will be more on this project yet to come.
+              <div class="media">
+                <img class="mr-3" src="Images/CustomerService.png" href = "Images/CustomerService.png" alt="Customer Service"></a>
+                Our customer service provides tech support for all of our products. We can use our state-of-the-art equipment to diagnose and trouble shoot problems you may have with our equipment in the future. <br/>
+                Our "Geniuses" are available on our tech support line (which is located on the website) or at any one of our retail stores. <br/>
+                We have a 60-day full-refund return policy upon purchase to return any defective products that may have missed our rigorous quality control team. After the 60-day period you have another 30-day return policy for credit or replacement for a defective product. <br/>
+
             </div>
           </div>
         </div>
+        <div class="card">
+          <div class="card-header" id="TermServiceHeading">
+            <h5 class="mb-0">
+              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#TermService" aria-expanded="true" aria-controls="TermService">
+                Terms & Service
+              </button>
+            </h5>
+          </div>
 
-      <div class="card">
-        <div class="card-header" id="OtherHeading">
+          <div id="TermService" class="collapse" aria-labelledby="TermServiceHeading" data-parent="#accordionProjects">
+            <div class="card-body">
+
+                <div class="media-body">
+                  <h5 class="mt-0">Terms & Service</h5>
+                  <p>These terms and conditions create a contract between you and Apple (the “Agreement”). Please read the Agreement carefully. By visting this website you agree to the terms and services.<br/>
+
+                    A. INTRODUCTION TO OUR SERVICES<br/>
+
+                  This Agreement governs your use of Apple’s services (“Services”), through which you can buy, get, license, rent or subscribe to media, apps (“Apps”), and other in-app services (“Content”). Our Services are: iTunes Store, App Store, Apple Books, Apple Music, and Apple News. Our Services are available for your use in your country of residence (“Home Country”). To use our Services, you need compatible hardware, software (latest version recommended and sometimes required) and Internet access (fees may apply). Our Services’ performance may be affected by these factors.<br/>
+
+                  B. USING OUR SERVICES<br/>
+
+                  PAYMENTS, TAXES, AND REFUNDS<br/>
+
+                  You can acquire Content on our Services for free or for a charge, either of which is referred to as a “Transaction.” Each Transaction is an electronic contract between you and Apple, and/or you and the entity providing the Content on our Services. However, if you are a customer of Apple Distribution International and you acquire an App or a book, Apple Distribution International is the merchant of record; this means that you acquire the Content from Apple Distribution International, and it is licensed by the App Provider (as defined below) or book publisher. When you make your first Transaction, we will ask you to choose how frequently we should ask for your password for future Transactions. If you enable Touch ID for Transactions, we will ask you to authenticate all Transactions with your fingerprint, and if you enable Face ID for Transactions, we will ask you to authenticate all Transactions using facial recognition. Manage your password settings at any time by following these instructions: https://support.apple.com/en-us/HT204030. Apple will charge your payment method (such as your credit card, debit card, gift card/code, or other method available in your Home Country) for any paid Transactions, including any applicable taxes. If we cannot charge your payment method for any reason (such as expiration or insufficient funds), you remain responsible for any uncollected amounts, and we will attempt to charge the payment method as you may update your payment method information. If you pre-order Content, you will be charged when the Content is delivered to you (unless you cancel prior to the Content’s availability). In accordance with local law, Apple may update information regarding your payment method if provided such information by your financial institution. For details about how Transactions are billed, please visit http://support.apple.com/kb/HT5582. All Transactions are final. Content prices may change at any time. If technical problems prevent or unreasonably delay delivery of Content, your exclusive and sole remedy is either replacement of the Content or refund of the price paid, as determined by Apple. From time to time, Apple may refuse a refund request if we find evidence of fraud, refund abuse, or other manipulative behavior that entitles Apple to a corresponding counterclaim.<br/>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="ReturnHeading">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#Return" aria-expanded="false" aria-controls="Return">
+                Return Information
+              </button>
+            </h5>
+          </div>
+          <div id="Return" class="collapse" aria-labelledby="ReturnHeading" data-parent="#accordionProjects">
+            <div class="card-body">
+              <p>
+                <h5>Product Return</h5>
+                <b>If you bought it at our retail store you can return it there. If you bought it at our online store all you have to do is: <br/>
+                  1.	Fill out a return form stating why you are returning the product. This is so we have a record on form that you wish to return the product.<br/>
+                  2.	Once you have sent the form, we will send a box for return. Just put the defective product in the box and send it in the mail. Shipping is already paid.<br/>
+                  3.	Once we receive the product you will receive an email updating on the status of your product whether it will be refurbished or if you will receive a new product or a refund.<br/>
+                  There will no refunds for digital purchases.</b>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+        <div class="card-header" id="FAQHeading">
           <h5 class="mb-0">
-            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#Other" aria-expanded="false" aria-controls="Other">
-              Other Projects
+            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#FAQ" aria-expanded="false" aria-controls="FAQ">
+              FAQ
             </button>
           </h5>
         </div>
-        <div id="Other" class="collapse" aria-labelledby="OtherHeading" data-parent="#accordionProjects">
+        <div id="FAQ" class="collapse" aria-labelledby="FAQHeading" data-parent="#accordionProjects">
           <div class="card-body">
+            <h5>FAQ</h5>
             Other projects are also in the works currently and I will add more as they get finished.
           </div>
         </div>
@@ -188,49 +207,63 @@
 
   </main>
   <footer>
-    <p>Alex Wood Web Development</p>
+    <p>Apple Online Store</p>
+    <address>
+    1 Apple Park Way <br/> 	Cupertino, California 95014<br/></address>
+    <section>
+      Telephone: (408) 961-1560
+    </section>
   </footer>
 
 </body>
 <script>
-  $('#openPHP').click(function(e) {
-    $('#PHP').collapse('show');
-    $('#Java').collapse('hide');
-    $('#AdvCss').collapse('hide');
+  $('#openWarranty').click(function(e) {
+    $('#Warranty').collapse('show');
+    $('#Return').collapse('hide');
+    $('#CustomerService').collapse('hide');
     $('#HomeProjects').collapse('hide');
+    $('#TermService').collapse('hide');
   });
 
 
-  $('#openJava').click(function(e) {
-    $('#Java').collapse('show');
-    $('#PHP').collapse('hide');
-    $('#AdvCss').collapse('hide');
-    $('#UIUX').collapse('hide');
+  $('#openReturn').click(function(e) {
+    $('#Return').collapse('show');
+    $('#Warranty').collapse('hide');
+    $('#CustomerService').collapse('hide');
+    $('#TermService').collapse('hide');
     $('#Other').collapse('hide');
   });
 
-  $('#openAdvCss').click(function(e) {
-    $('#AdvCss').collapse('show');
-    $('#PHP').collapse('hide');
-    $('#Java').collapse('hide');
-    $('#UIUX').collapse('hide');
+  $('#openCustomerService').click(function(e) {
+    $('#CustomerService').collapse('show');
+    $('#Warranty').collapse('hide');
+    $('#Return').collapse('hide');
+    $('#TermService').collapse('hide');
     $('#Other').collapse('hide');
   });
 
-  $('#openUIUX').click(function(e) {
-    $('#UIUX').collapse('show');
-    $('#AdvCss').collapse('hide');
-    $('#PHP').collapse('hide');
-    $('#Java').collapse('hide');
+  $('#openTermService').click(function(e) {
+    $('#TermService').collapse('show');
+    $('#CustomerService').collapse('hide');
+    $('#Warranty').collapse('hide');
+    $('#Return').collapse('hide');
     $('#Other').collapse('hide');
   });
 
   $('#openOther').click(function(e) {
     $('#Other').collapse('show');
-    $('#AdvCss').collapse('hide');
-    $('#PHP').collapse('hide');
-    $('#Java').collapse('hide');
-    $('#UIUX').collapse('hide');
+    $('#CustomerService').collapse('hide');
+    $('#Warranty').collapse('hide');
+    $('#Return').collapse('hide');
+    $('#TermService').collapse('hide');
+  });
+
+  $('#openFAQ').click(function(e) {
+    $('#FAQ').collapse('show');
+    $('#Return').collapse('hide');
+    $('#CustomerService').collapse('hide');
+    $('#Warranty').collapse('hide');
+    $('#TermService').collapse('hide');
   });
 </script>
 

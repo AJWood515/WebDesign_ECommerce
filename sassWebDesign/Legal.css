@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css?family=Gentium+Basic");
+/* CSS Document */
+@import url("https://fonts.googleapis.com/css?family=Gentium+Basic");
+.jumbotron {
+  background: white;
+  /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(to bottom, white, #717D7E);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(to bottom, white, #717D7E);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(to bottom, white, #717D7E);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom, white, #717D7E);
+  /* Standard syntax (must be last) */
+  border: 2px solid black;
+  background-image: url("../Images/appleHeader.jpg");
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.jumbotron img {
+  border-radius: 100%;
+  background-color: white; }
+
+[class|=lg-col-6] {
+  margin: auto;
+  margin-top: -10px;
+  font-family: 'Gentium Basic', serif; }
+
+h1 {
+  font-size: 55px;
+  color: white;
+  text-shadow: 2px 2px 4px #000000; }
+
+h5 {
+  font-size: 35px;
+  margin-top: -20px;
+  color: white;
+  text-shadow: 2px 2px 4px #000000; }
+
+header img {
+  height: 230px;
+  width: 250px;
+  margin-top: -55px;
+  margin-left: -20px; }
+
+header .media div:nth-of-type(2) {
+  margin: auto;
+  margin-top: -5px;
+  color: white;
+  text-shadow: 2px 2px 4px #000000; }
+
+@media screen and (max-width: 630px) {
+  #hide {
+    display: none; } }
+@media screen and (max-width: 575px) {
+  header img {
+    height: 230px;
+    width: 250px;
+    margin-top: 0px;
+    margin-left: 0px; } }
+@media screen and (max-width: 575px) {
+  header img {
+    display: none; } }
+/* CSS Document */
+footer {
+  background: white;
+  /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(to left, white, #717D7E);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(to left, white, #717D7E);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(to left, white, #717D7E);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to left, white, #717D7E);
+  /* Standard syntax (must be last) */
+  border: 1px solid black;
+  height: 100px;
+  margin: 10px;
+  padding: 5px;
+  font-family: 'Gentium Basic', serif; }
+
+footer p {
+  font-size: 30px; }
+
+address {
+  font-size: 20px;
+  margin-top: -25px; }
+
+footer section {
+  float: right;
+  margin-top: -100px; }
+
+@media screen and (max-width: 500px) {
+  footer section {
+    display: none; } }
+nav {
+  background-color: #1A5276; }
+
+.navbar-light .navbar-nav .nav-link {
+  color: white; }
+
+.navbar-light .navbar-nav .nav-link.disabled {
+  color: #ffc024; }
+
+a:not([href]):not([tabindex]) {
+  color: white; }
+
+/* CSS Document */
+body {
+  background-color: lightgrey;
+  background-image: url("../Images/appleBackground.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; }
+
+div img {
+  width: 20%;
+  height: 20%; }
+
+.card {
+  background-color: #626567; }
+
+.card-body {
+  background-color: #909497; }
+
+.sidenav {
+  left: 10px;
+  background: #eee;
+  overflow-x: hidden;
+  padding: 8px 0;
+  background: white;
+  /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(to top right, white, #4D5656);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(to top right, white, #4D5656);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(to top right, white, #4D5656);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to top right, white, #4D5656);
+  /* Standard syntax (must be last) */ }
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 22px;
+  color: #33FF99;
+  display: block;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  text-overflow: clip; }
+
+.sidenav a:hover {
+  color: #6C3483; }
+
+.btn {
+  color: #33FF99;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; }
+
+/*# sourceMappingURL=Legal.css.map */

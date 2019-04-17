@@ -1,0 +1,52 @@
+@import 'header';
+@import 'footer';
+@import 'navbar';
+
+@import 'gradientMixin';
+
+
+body{
+  background-color: lightgrey;
+  background-image: url("../Images/appleBackground.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+div img{
+  width:20%;
+  height:20%;
+}
+
+.card{
+  background-color: #626567;
+}
+.card-body{
+  background-color: #909497
+}
+
+.sidenav {
+  left: 10px;
+  background: #eee;
+  overflow-x: hidden;
+  padding: 8px 0;
+  @include verticalGradient(to top right, white, #4D5656);
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 22px;
+  color:#33FF99;
+  display: block;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  text-overflow: clip;
+}
+
+.sidenav a:hover {
+  color: #6C3483;
+}
+.btn{
+  color:#33FF99;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
