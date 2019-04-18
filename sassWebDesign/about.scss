@@ -19,52 +19,47 @@ body img{
   height:15em;
   width:15em;
 }
+p{
+font-size: 30px;
+
+}
 #slide{
   opacity: 0;
   -webkit-animation: slide 10s forwards;
   -webkit-animation-delay:1s;
-  animation: slide 10s forwards;
-  animation-delay: 1s;
+  animation: bounceIn 2s forwards;
+
 }
 #slide2{
   opacity: 0;
   -webkit-animation: slide 10s forwards;
   -webkit-animation-delay:2s;
-  animation: slide 10s forwards;
-  animation-delay: 2s;
+  animation: bounceIn 2s forwards;
+  animation-delay: 1s;
 }
 #slide3{
   opacity: 0;
   -webkit-animation: slide 10s forwards;
   -webkit-animation-delay:3s;
-  animation: slide 10s forwards;
-  animation-delay: 3s;
+  animation: bounceIn 2s forwards;
+  animation-delay: 2s;
 }
 
-@-webkit-keyframes slide {
-  10%{opacity: 10;}
-  20%{opacity: 20;}
-  30%{opacity:30;}
-  40%{opacity:40;}
-  50%{opacity: 50;}
-  60%{opacity:60;}
-  70%{opacity: 70;}
-  80%{opacity: 80;}
-  90%{opacity: 90;}
-  100% {opacity: 100;}
-}
 
-@keyframes slide {
-  10%{opacity: 10;}
-  20%{opacity: 20;}
-  30%{opacity:30;}
-  40%{opacity:40;}
-  50%{opacity: 50;}
-  60%{opacity:60;}
-  70%{opacity: 70;}
-  80%{opacity: 80;}
-  90%{opacity: 90;}
-  100% {opacity: 100;}
+
+@keyframes bounceIn {
+  0% {
+    transform: scale(0.1);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 100;
+  }
 }
 
 @media screen and (max-width: 630px) {
